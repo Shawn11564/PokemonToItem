@@ -38,7 +38,7 @@ public class ItemToPoke {
                     NbtCompound pokemonData = pokemonNbt.getCompound("Data");
                     pokemon.loadFromNBT(pokemonData);
                     party.add(pokemon);
-                    player.setStackInHand(player.getActiveHand(), ItemStack.EMPTY);
+                    player.setStackInHand(Hand.MAIN_HAND, ItemStack.EMPTY);
                 }
             } else {
                 player.sendMessage(Text.of("[§2§lPokeToItem§f] §4§lYou don't have a Pokémon in your main hand!!!"));
